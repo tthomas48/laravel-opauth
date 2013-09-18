@@ -1,6 +1,7 @@
 {
     "name": "socialism/laravel-opauth",
-    "description": "",
+    "description": "Laravel 4.x Opauth package",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Socialism",
