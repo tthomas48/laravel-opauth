@@ -1,0 +1,21 @@
+{
+    "name": "socialism/laravel-opauth",
+    "description": "",
+    "authors": [
+        {
+            "name": "Socialism",
+            "email": "hello@socialism.pro"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x",
+        "opauth/opauth": "0.4.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Socialism\\LaravelOpauth": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
