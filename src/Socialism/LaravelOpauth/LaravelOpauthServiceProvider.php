@@ -3,6 +3,7 @@
 namespace Socialism\LaravelOpauth;
 
 use Illuminate\Support\ServiceProvider,
+    \Opauth,
     \App,
     \URL;
 
@@ -44,7 +45,7 @@ class LaravelOpauthServiceProvider extends ServiceProvider {
             $config['security_salt'] = $app['config']->get('app.key');
             $config['path'] = substr(route($app['config']->get("laravel-opauth::route"), [null, null]), strlen(URL::to('/')));
 
-            return new LaravelOpauth($config, false);
+            return new Opauth($config, false);
         });
 	}
 
