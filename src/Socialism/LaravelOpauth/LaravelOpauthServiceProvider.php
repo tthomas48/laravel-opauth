@@ -38,7 +38,7 @@ class LaravelOpauthServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-        $this->app['opauth'] = $this->app->share(function (App $app) {
+        $this->app['opauth'] = $this->app->share(function ($app) {
             $config = $app['config']->get("laravel-opauth::opauth");
 
             $config['security_salt'] = $app['config']->get('app.key');
